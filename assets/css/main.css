@@ -58,14 +58,46 @@
   border: 1px solid black;
   font-size: 1.25rem;
   font-weight: 600;
+  position: relative;
+  transition: all 0.5s ease;
+  width: 90%;
+  margin: 1rem auto;
+  box-shadow: 4px 3px 6px 0px rgba(7, 7, 7, 0.72);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.alert__icon {
+  color: black;
+}
+.alert__text {
+  color: black;
 }
 .alert--primary {
   background-color: blue;
   color: white;
 }
+.alert--primary i, .alert--primary p {
+  color: white;
+}
 .alert--success {
   background-color: rgb(35, 168, 35);
   color: white;
+}
+.alert--success i, .alert--success p {
+  color: white;
+}
+.alert--danger {
+  background-color: red;
+  color: white;
+}
+.alert--danger i, .alert--danger p {
+  color: white;
+}
+.alert:hover {
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.025);
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=main.css.map */

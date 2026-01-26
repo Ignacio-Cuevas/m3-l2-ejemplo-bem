@@ -8,15 +8,56 @@
     border: 1px solid black;
     font-size: 1.25rem;
     font-weight: 600;
+    position: relative;
+    transition: all 0.5s ease;
+    width: 90%;
+    margin: 1rem auto;
+    box-shadow: 4px 3px 6px 0px rgba(7,7,7,0.72);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &__icon {
+        color: black;
+    }
+
+    &__text {
+        color: black;
+
+    }
+
+
 
     &--primary {
         background-color: v.$primary;
         color: white;
+        i, p {
+            color: white;
+        }
     }
 
     &--success {
         background-color: v.$success;
         color: white;
+        i, p {
+            color: white;
+        }
+    }
+
+    &--danger {
+        background-color: v.$danger;
+        color: white;
+        i, p {
+            color: white;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-5px) scale(1.025);
+        opacity: 0.75;
+
+
     }
 
 }
