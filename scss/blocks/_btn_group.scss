@@ -1,43 +1,33 @@
 .btn-group {
+    // Use flex layout for button alignment
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem; // space between buttons
+    font-size: 1.25rem;
+    font-weight: 800;
+
+
     &__button {
-        background-color: #04AA6D;
-        /* Green background */
-        border: 1px solid green;
-        /* Green border */
-        color: white;
-        /* White text */
-        padding: 10px 24px;
-        /* Some padding */
-        cursor: pointer;
-        /* Pointer/hand icon */
-        float: left;
+        background-color: #04aa6d; // Green background
+        border: 1px solid green; // Green border
+        color: #000000; // Black text
+        padding: 10px 24px; // Some padding
+        cursor: pointer; // Pointer/hand icon
 
-        /* Float the buttons side by side */
         &:not(:last-child) {
-            border-right: none;
-            /* Prevent double borders */
+            border-right: none; // keep visual style if needed
         }
 
-        /* Add a background color on hover */
         &:hover {
-            background-color: #3e8e41;
-        }
-
-        /* Clear floats (clearfix hack) */
-        &:after {
-            content: "";
-            clear: both;
-            display: table;
+            background-color: #3e8e41; // Hover background
         }
 
         &--important {
             background-color: #f2705a;
 
-            &:hover { 
+            &:hover {
                 background-color: #f0583e;
             }
         }
-
-
     }
 }
