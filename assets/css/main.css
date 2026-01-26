@@ -50,4 +50,22 @@
   background-color: #d9591e;
 }
 
+.alert {
+  padding: 1rem 0.5rem;
+  background-color: grey;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.alert--primary {
+  background-color: blue;
+  color: white;
+}
+.alert--success {
+  background-color: rgb(35, 168, 35);
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */
