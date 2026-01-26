@@ -1,0 +1,34 @@
+$color-primary: #2b07a3;
+$color-success: #148a3d;
+$color-danger: #d9591e;
+
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 4px 3px 6px 0px rgba(7,7,7,0.72);
+    position: relative;
+    transition: all 0.3s ease;
+
+
+    &:hover {
+        cursor: pointer;
+        transform:scale(1.1);
+    }
+
+    &--primary {
+        color:white;
+        background-color: $color-primary;
+    }
+
+    &--success {
+        color:whitesmoke;
+        background-color: $color-success;
+    }
+
+    &--danger {
+        color: black;
+        background-color: $color-danger;
+    }
+}
