@@ -1,0 +1,100 @@
+@use "variables" as *;
+
+.team-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    // Sombra y elevación al pasar el mouse
+    &:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    // Brillo suave en el borde
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 2px solid transparent;
+    background-color: linear-gradient(45deg, $color-facebook, $color-linkedin, $color-x);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  // Íconos sociales con pequeño “bounce”
+  &__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px) scale(1.1);
+      opacity: 0.85;
+    }
+  }
+
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        color: grey;
+        font-size: 18px;
+    }
+
+    &__social-link {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+
+        &--twitter {
+            color: $color-x;
+        }
+
+        &--facebook {
+            color: $color-facebook;
+        }
+
+        &--linkedin {
+            color: $color-linkedin;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__contact-button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: $secondary;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
