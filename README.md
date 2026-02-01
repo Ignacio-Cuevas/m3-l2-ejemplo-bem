@@ -44,7 +44,7 @@ Proyecto frontend que reúne ejemplos simples de componentes de interfaz de usua
 ## Demo
 
 Puedes ver el proyecto funcionando aquí:  
-[Ver demo en vivo](https://tu-usuario.github.io/tu-repo/)
+[Ver demo en vivo](https://ignacio-cuevas.github.io/m3-l2-ejemplo-bem/)
 
 ## Autor
 
