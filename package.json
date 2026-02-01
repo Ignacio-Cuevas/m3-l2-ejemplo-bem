@@ -1,0 +1,20 @@
+{
+  "name": "m3-l2-bem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.97.3"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  }
+}

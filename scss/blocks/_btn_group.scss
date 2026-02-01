@@ -1,0 +1,33 @@
+.btn-group {
+    // Use flex layout for button alignment
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem; // space between buttons
+    font-size: 1.25rem;
+    font-weight: 800;
+
+
+    &__button {
+        background-color: #04aa6d; // Green background
+        border: 1px solid green; // Green border
+        color: #000000; // Black text
+        padding: 10px 24px; // Some padding
+        cursor: pointer; // Pointer/hand icon
+
+        &:not(:last-child) {
+            border-right: none; // keep visual style if needed
+        }
+
+        &:hover {
+            background-color: #3e8e41; // Hover background
+        }
+
+        &--important {
+            background-color: #f2705a;
+
+            &:hover {
+                background-color: #f0583e;
+            }
+        }
+    }
+}

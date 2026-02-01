@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos BEM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#ejemplo1">Ejemplo 1</a></li>
+            <li class="nav__item"><a class="nav__link" href="#ejemplo2">Ejemplo 2</a></li>
+            <li class="nav__item"><a class="nav__link" href="#ejemplo3">Ejemplo 3</a></li>
+            <li class="nav__item"><a class="nav__link" href="#ejemplo4">Ejemplo 4</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section id="ejemplo1">
+            <div class="btn-group">
+                <button class="btn-group__button btn-group__button--important">Apple</button>
+                <button class="btn-group__button">Samsung</button>
+                <button class="btn-group__button">Sony</button>
+            </div>
+
+        </section>
+
+        <section id="ejemplo2">
+            <button class="btn btn--primary">Botón 1</button>
+            <button class="btn btn--success">Botón 2</button>
+            <button class="btn btn--danger">Botón 3</button>
+        </section>
+
+        <section id="ejemplo3">
+            <div class="alert alert--primary" role="alert">
+                <i class="bi bi-x-diamond alert__icon"></i>
+                <p class="alert__text">Alerta primaria</p>
+            </div>
+
+            <div class="alert alert--success" role="alert">
+                <i class="bi bi-hand-thumbs-up-fill alert__icon"></i>
+                <p class="alert__text">Alerta de Éxito</p>
+            </div>
+
+            <div class="alert alert--danger" role="alert">
+                <i class="bi bi-exclamation-diamond-fill alert__icon"></i>
+                <p class="alert__text">Alerta de Peligro</p>
+            </div>
+
+        </section>
+
+        <section id="ejemplo4">
+            <h2>Ejemplo tarjeta de profile</h2>
+            <div class="team-card">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John Doe" class="team-card__image">
+                <h2 class="team-card__name">John Doe</h2>
+                <p class="team-card__title">CEO & Founder, Example</p>
+                <p class="team-card__university">Harvard University</p>
+                <div class="team-card__social-links">
+                    <a href="#" class="team-card__social-link team-card__social-link--twitter" aria-label="Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="team-card__social-link team-card__social-link--linkedin" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#" class="team-card__social-link team-card__social-link--facebook" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+                <p class="team-card__contact-wrapper">
+                    <button class="team-card__contact-button">Contact</button>
+                </p>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
