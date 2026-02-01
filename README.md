@@ -41,8 +41,13 @@ Proyecto frontend que reúne ejemplos simples de componentes de interfaz de usua
 - Sustituye la imagen y el texto de la tarjeta de perfil por tus propios datos.
 - Ajusta colores, bordes y sombras para integrarlos con el diseño de tu sitio principal.
 
+## Demo
+
+Puedes ver el proyecto funcionando aquí:  
+[Ver demo en vivo](https://tu-usuario.github.io/tu-repo/)
+
 ## Autor
 
-Proyecto realizado por Ignacio Cuevas (kinesiólogo y desarrollador frontend en formación).  
+Proyecto realizado por Ignacio Cuevas (kinesiólogo y desarrollador frontend en formación).
 
 
