@@ -11,6 +11,10 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.97.3"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d ."
   }
 }
